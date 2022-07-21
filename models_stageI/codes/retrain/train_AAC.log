@@ -1,0 +1,29 @@
+nohup: ignoring input
+Using TensorFlow backend.
+WARNING:tensorflow:From /opt/anaconda2/lib/python2.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /opt/anaconda2/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+./train_AAC.py:345: UserWarning: Update your `Model` call to the Keras 2 API: `Model(outputs=[<tf.Tenso..., inputs=[<tf.Tenso...)`
+  model = Model(input=[inputs], output=[outLayer_1,outLayer_2])
+WARNING:tensorflow:From /opt/anaconda2/lib/python2.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2021-09-21 11:31:52.979982: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-09-21 11:31:52.985665: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3600000000 Hz
+2021-09-21 11:31:52.986121: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x564e7ab35040 executing computations on platform Host. Devices:
+2021-09-21 11:31:52.986148: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2021-09-21 11:31:53.452704: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: TITAN Xp major: 6 minor: 1 memoryClockRate(GHz): 1.582
+pciBusID: 0000:b6:00.0
+totalMemory: 11.91GiB freeMemory: 11.77GiB
+2021-09-21 11:31:53.452737: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2021-09-21 11:31:53.453442: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-09-21 11:31:53.453453: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2021-09-21 11:31:53.453458: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2021-09-21 11:31:53.453523: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11446 MB memory) -> physical GPU (device: 0, name: TITAN Xp, pci bus id: 0000:b6:00.0, compute capability: 6.1)
+2021-09-21 11:31:53.455026: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x564e7b249e60 executing computations on platform CUDA. Devices:
+2021-09-21 11:31:53.455048: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): TITAN Xp, Compute Capability 6.1
+2021-09-21 11:31:55.292247: I tensorflow/stream_executor/dso_loader.cc:152] successfully opened CUDA library libcublas.so.10.0 locally
